@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/DentistProject.dir/main.cpp.o  -o DentistProject 
