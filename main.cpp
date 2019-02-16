@@ -166,7 +166,13 @@ public:
         id = nextId;
         nextId++;
     }
-
+    Person(string n, string s, int ID)
+    {
+        name = n;
+        surname = s;
+        id = ID;
+        nextId++;
+    }
     int getId()
     {
         return id;
@@ -197,7 +203,11 @@ public:
     {
         specialisation = sp;
     }
-
+    Dentist(string n, string s, int ID, type sp)
+            :Person(n,s, ID)
+    {
+        specialisation = sp;
+    }
     virtual void printPerson() override
     {
         Person::printPerson();
@@ -252,6 +262,17 @@ public:
 
     Client(string n, string s, int b)
     :Person(n,s)
+    {
+        if(balance >= 0)
+            balance = b;
+        else
+        {
+            cout << "Balance can't be negative so it is set to 10000" << endl;
+            balance = 10000;
+        }
+    }
+    Client(string n, string s, int ID, int b)
+            :Person(n,s, ID)
     {
         if(balance >= 0)
             balance = b;
@@ -758,22 +779,22 @@ public:
         {
             string name, surname, nameD, surnameD;
             int balance = 0, spec = 0, idDent = 0, idClient = 0, year = 0, month = 0, day = 0, hours = 0, minutes = 0;
-            while(inputFileClients >> name >> surname >> balance)
+            while(inputFileClients >> name >> surname >> idClient >> balance)
             {
-                clients.push_back(new Client(name, surname, balance));
+                clients.push_back(new Client(name, surname, idClient, balance));
             }
-            while(inputFileDentists >> nameD >> surnameD >> spec)
+            while(inputFileDentists >> nameD >> surnameD >> idDent >> spec)
             {
                 switch(spec)
                 {
                     case 1:
-                        dentists.push_back(new Dentist(nameD, surnameD, surgeon));
+                        dentists.push_back(new Dentist(nameD, surnameD, idDent, surgeon));
                         break;
                     case 2:
-                        dentists.push_back(new Dentist(nameD, surnameD, esthetic));
+                        dentists.push_back(new Dentist(nameD, surnameD, idDent, esthetic));
                         break;
                     case 3:
-                        dentists.push_back(new Dentist(nameD, surnameD, general));
+                        dentists.push_back(new Dentist(nameD, surnameD, idDent, general));
                         break;
                     default:
                         break;

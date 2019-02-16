@@ -1,1 +1,2 @@
-Damian Kucharski 0 50000
+Damian Kucharski 0 10000
+Magdalena Rogalska 2 50250
