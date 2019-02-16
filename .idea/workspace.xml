@@ -12,7 +12,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ec27a7d-8e92-4264-9ee7-c455d4d4c1fa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,7 +24,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor" />
@@ -32,18 +33,47 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="274" column="19" lean-forward="true" selection-start-line="274" selection-start-column="19" selection-end-line="274" selection-end-column="19" />
+            <state relative-caret-position="347">
+              <caret line="460" column="31" lean-forward="true" selection-start-line="460" selection-start-column="31" selection-end-line="460" selection-end-column="31" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
-                <element signature="e#102#122#1" />
-                <element signature="e#473#2584#1" />
-                <element signature="e#2587#2852#1" />
-                <element signature="e#2880#2940#1" />
-                <element signature="e#2943#2976#1" />
+                <element signature="e#271#303#0" />
+                <element signature="e#120#166#1" />
+                <element signature="e#169#2273#1" />
+                <element signature="e#2276#2660#1" />
+                <element signature="e#3157#4244#1" />
+                <element signature="e#4364#4560#0" />
+                <element signature="e#4814#4851#0" />
+                <element signature="e#4857#4893#0" />
+                <element signature="e#4899#4934#0" />
+                <element signature="e#7598#7643#0" />
+                <element signature="e#7792#7978#0" />
+                <element signature="e#4940#4968#0" />
+                <element signature="e#5375#5412#0" />
+                <element signature="e#6296#6334#0" />
+                <element signature="e#14620#14659#0" />
+                <element signature="e#15009#15525#0" />
+                <element signature="e#15535#16051#0" />
+                <element signature="e#7386#7427#0" />
+                <element signature="e#15894#16333#0" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cmake-build-debug/visits.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cmake-build-debug/clients.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cmake-build-debug/dentists.txt">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -54,14 +84,18 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/cmake-build-debug/clients.txt" />
+        <option value="$PROJECT_DIR$/cmake-build-debug/dentists.txt" />
+        <option value="$PROJECT_DIR$/cmake-build-debug/visits.txt" />
         <option value="$PROJECT_DIR$/main.cpp" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="956" />
-    <option name="width" value="964" />
-    <option name="height" value="1032" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="654" />
+    <option name="y" value="136" />
+    <option name="width" value="954" />
+    <option name="height" value="1031" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -69,7 +103,17 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="DentistProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DentistProject" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope" />
     </panes>
   </component>
@@ -109,36 +153,38 @@
       <option name="presentableId" value="Default" />
       <updated>1550170532112</updated>
       <workItem from="1550170542283" duration="7201000" />
+      <workItem from="1550252933054" duration="1624000" />
+      <workItem from="1550300808989" duration="16381000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7201000" />
+    <option name="totallyTimeSpent" value="25206000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1036" extended-state="6" />
+    <frame x="-4" y="0" width="1928" height="1040" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2497332" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1755603" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="CMake" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Messages" weight="0.32929516" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32929516" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.9229075" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39977974" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Database Changes" order="7" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.32929516" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="bottom" id="CMake" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,17 +194,40 @@
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/clients.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/visits.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/dentists.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="274" column="19" lean-forward="true" selection-start-line="274" selection-start-column="19" selection-end-line="274" selection-end-column="19" />
+        <state relative-caret-position="347">
+          <caret line="460" column="31" lean-forward="true" selection-start-line="460" selection-start-column="31" selection-end-line="460" selection-end-column="31" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
-            <element signature="e#102#122#1" />
-            <element signature="e#473#2584#1" />
-            <element signature="e#2587#2852#1" />
-            <element signature="e#2880#2940#1" />
-            <element signature="e#2943#2976#1" />
+            <element signature="e#271#303#0" />
+            <element signature="e#120#166#1" />
+            <element signature="e#169#2273#1" />
+            <element signature="e#2276#2660#1" />
+            <element signature="e#3157#4244#1" />
+            <element signature="e#4364#4560#0" />
+            <element signature="e#4814#4851#0" />
+            <element signature="e#4857#4893#0" />
+            <element signature="e#4899#4934#0" />
+            <element signature="e#7598#7643#0" />
+            <element signature="e#7792#7978#0" />
+            <element signature="e#4940#4968#0" />
+            <element signature="e#5375#5412#0" />
+            <element signature="e#6296#6334#0" />
+            <element signature="e#14620#14659#0" />
+            <element signature="e#15009#15525#0" />
+            <element signature="e#15535#16051#0" />
+            <element signature="e#7386#7427#0" />
+            <element signature="e#15894#16333#0" />
           </folding>
         </state>
       </provider>
