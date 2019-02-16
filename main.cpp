@@ -465,20 +465,26 @@ public:
 
     void printVisitsList() const
     {
+        cout << "Printing Visits\n";
         for(auto visit: visits)
             visit->printVisitInfo();
+        cout << endl;
     }
 
     void printClientsList() const
     {
+        cout << "Printing Clients\n";
         for(auto client: clients)
             client->printPerson();
+        cout << endl;
     }
 
     void printDentistsList() const
     {
+        cout << "Printing dentists\n";
         for(auto dentist: dentists)
             dentist->printPerson();
+        cout << endl;
     }
 
     Dentist * hasDentistOfId(int id)
@@ -888,9 +894,10 @@ void handleOptions(Database & db)
                 if(db.numberOfClients() > 0)
                 {
                     db.printClientsList();
+                    cout << "Choose id: ";
                     int idChoice;
                     cin >> idChoice;
-                    db.hasClientOfId(choice)->updateBalance();
+                    db.hasClientOfId(idChoice)->updateBalance();
                 }
                 else
                 {
@@ -918,6 +925,7 @@ void handleOptions(Database & db)
                 if(db.numberOfClients() > 0)
                 {
                     db.printClientsList();
+                    cout << "Choose id: ";
                     int idChoice;
                     cin >> idChoice;
                     db.removeClient(idChoice);
@@ -933,6 +941,7 @@ void handleOptions(Database & db)
                 if(db.numberOfDentists() > 0)
                 {
                     db.printDentistsList();
+                    cout << "Choose id: ";
                     int idChoice;
                     cin >> idChoice;
                     db.removeDentist(idChoice);
@@ -949,6 +958,7 @@ void handleOptions(Database & db)
                 {
                     db.printVisitsList();
                     int idChoice;
+                    cout << "Choose id: ";
                     cin >> idChoice;
                     db.removeVisit(idChoice);
                 }
@@ -973,8 +983,6 @@ void handleOptions(Database & db)
             }
 
         }
-
-        choiceMenu();
 
     }while(choice != 13);
 }
