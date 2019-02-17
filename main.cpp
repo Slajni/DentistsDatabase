@@ -808,7 +808,7 @@ public:
         }
 
     }
-    void saveToFiles() // TODO: dokonczyc
+    void saveToFiles()
     {
         inputFileVisits.close();
         inputFileClients.close();
